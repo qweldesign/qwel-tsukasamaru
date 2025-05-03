@@ -1,5 +1,5 @@
 {
-  "name": "qwel-starter-template",
+  "name": "tsukasamaru",
   "version": "1.0",
   "description": "",
   "main": "init.js",
@@ -8,12 +8,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/qweldesign/qwel-starter-template.git"
+    "url": "git+https://github.com/qweldesign/tsukasamaru.git"
   },
   "author": "Taigo Ito",
   "license": "GPL",
   "bugs": {
-    "url": "https://github.com/qweldesign/qwel-starter-template/issues"
+    "url": "https://github.com/qweldesign/tsukasamaru/issues"
   },
-  "homepage": "https://github.com/qweldesign/qwel-starter-template#readme"
+  "homepage": "https://github.com/qweldesign/tsukasamaru#readme"
 }

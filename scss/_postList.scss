@@ -34,7 +34,7 @@
   }
 
   &--grid {
-    @include row();
+    @include row(space-around, stretch);
 
     .postList__item {
       @include col(4, false, "md");
@@ -42,6 +42,10 @@
     }
 
     .postItem {
+      &__heading {
+        text-align: center;
+      }
+
       &__more {
         text-align: center;
       }
