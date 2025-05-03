@@ -1,6 +1,31 @@
-## QWEL STARTER TEMPLATE
+# 海辺の農園宿つかさ丸 (SPA)
 
-[QWEL.DESIGN](https://qwel.design) のweb開発のためのスターターキット
+シンプルなワンページ型webサイト。  
+だが、様々なUI/UXを実験的に盛り込んでいる。
+
+[https://tsukasamaru.net/](https://tsukasamaru.net/)
+
+---
+
+## 内包UI/UXコンポーネント
+
+- BackToTop (トップへ戻るボタン)
+- DrawerMenu (モバイル対応のためのドロワーメニュー)
+- Embed (iframe埋め込み時の動作制御)
+- Slider (スライドギャラリー)
+
+---
+
+## SQLite+自作API稼働 営業日カレンダー
+
+民宿の空室状況管理のための簡易システムとして開発。  
+
+SQLiteで状態管理 → 自作APIからfetch → JSで描画 と、  
+PHP / Vanilla JS でスクラッチした自信作のひとつ。
+
+[https://tools.qwel.design/business-calendar/](https://tools.qwel.design/business-calendar/)
+
+---
 
 ## ライセンス | License
 
