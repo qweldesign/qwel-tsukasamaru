@@ -1,7 +1,11 @@
 # 海辺の農園宿つかさ丸 (SPA)
 
-シンプルなワンページ型webサイト。  
-だが、様々なUI/UXを実験的に盛り込んでいる。
+シンプルなワンページ型webサイト  
+だが、様々なUI/UXを実験的に盛り込んでいる  
+[qwel-in-action](https://github.com/qweldesign/qwel-in-action) から派生  
+
+- 制作期間: 2025年3月
+- 運用期間: 2025年4月～現在
 
 [https://tsukasamaru.net/](https://tsukasamaru.net/)
 
@@ -29,16 +33,24 @@ PHP / Vanilla JS でスクラッチした自信作のひとつ。
 
 ## ライセンス | License
 
-[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0.html)  
+### コード部分 | Code
 
-このプロジェクトは [GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.html) に基づき、改変・再配布の自由を保障しています。  
-This project is licensed under the [GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.html) , ensuring freedom to use, modify, and redistribute.  
+Copyright (C) 2026 [QWEL.DESIGN](https://qwel.design)  
+All rights reserved.  
 
-よって、改変・再配布の際は、著作権表記（© QWEL.DESIGN）および https://qwel.design/ を明記し、ソースコードを開示してください。  
-Therefore, if you modify or redistribute this software, you must retain the copyright notice (© QWEL.DESIGN) and https://qwel.design/, and make the source code available.  
+このリポジトリは閲覧目的のために公開されています。  
+コードの改変、再配布、再利用は、明示的な許可なしには認められていません。  
 
-詳しくは LICENSE ファイルをご覧ください。  
-See the LICENSE file for details.  
+This repository is published for viewing purposes only.  
+Modification, redistribution, or reuse of any part of this code is not permitted without explicit permission.  
+
+### 写真・文章・その他コンテンツ | Contents
+
+写真・文章・その他コンテンツの著作権は全て、海辺の農園宿つかさ丸に帰属します。  
+複製・再利用・再配布は、明示的な許可なしには認められていません。  
+
+All copyrights in the photos, texts, and other content belong to the seaside farm inn Tsukasamaru.  
+Reproduction, reuse, or redistribution without explicit permission is prohibited.  
 
 ---
 
