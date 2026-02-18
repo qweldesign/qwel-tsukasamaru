@@ -14,6 +14,10 @@ new Modal();
 import Slider from './js/slider.js';
 new Slider();
 
+// Business Calender
+import BusinessCalendar from './js/businessCalendar.js';
+new BusinessCalendar({ delay: 9 });
+
 /**
  * Auto Copyright
  * © 2026 QWEL.DESIGN (https://qwel.design)
