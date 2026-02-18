@@ -32,3 +32,35 @@
     @include make-button-color-normal("primary");
   }
 }
+
+.confirm {
+  table {
+    @include table();
+    margin-block-end: space("large");
+
+    th {
+      width: 12rem;
+    }
+
+    td {
+      text-align: left;
+    }
+  }
+
+  [type="submit"], [type="button"] {
+    display: inline-block;
+    width: 14rem;
+    height: 3.5rem;
+    line-height: 3.5rem;
+    margin-inline: space();
+    @include make-button();
+  }
+
+  [type="submit"] {
+    @include make-button-color-normal("primary");
+  }
+  
+  [type="button"] {
+    @include make-button-color-normal("secondary");
+  }
+}

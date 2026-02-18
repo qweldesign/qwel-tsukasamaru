@@ -1464,6 +1464,80 @@ button, input, select, textarea {
   color: var(--color--darkest);
 }
 
+.confirm table {
+  width: 100%;
+}
+@media (max-width: 599.9px) {
+  .confirm table, .confirm table thead, .confirm table tbody, .confirm table tr, .confirm table th, .confirm table td {
+    display: block;
+  }
+}
+.confirm table thead, .confirm table tbody {
+  width: 100%;
+}
+.confirm table thead {
+  border: 0;
+}
+.confirm table tr {
+  border-block-end: 1px solid var(--color--lighter);
+}
+.confirm table tr:first-child {
+  border-block-start: 1px solid var(--color--lighter);
+}
+.confirm table th, .confirm table td {
+  padding: var(--spacing--small);
+  border: 0;
+}
+.confirm table {
+  margin-block-end: var(--spacing--large);
+}
+.confirm table th {
+  width: 12rem;
+}
+.confirm table td {
+  text-align: left;
+}
+.confirm [type=submit], .confirm [type=button] {
+  display: inline-block;
+  width: 14rem;
+  height: 3.5rem;
+  line-height: 3.5rem;
+  margin-inline: var(--spacing--small);
+}
+.confirm [type=submit], .confirm [type=submit]:active, .confirm [type=button], .confirm [type=button]:active {
+  border: 0;
+  border-radius: var(--spacing--x-small);
+  text-align: center;
+  text-decoration: none;
+  word-break: break-word;
+  outline: 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.confirm [type=submit]:hover, .confirm [type=submit]:focus, .confirm [type=button]:hover, .confirm [type=button]:focus {
+  text-decoration: none;
+  transform: scale(96%);
+}
+.confirm [type=submit], .confirm [type=submit]:active {
+  background-color: var(--color--primary);
+  color: var(--color--lightest);
+}
+.confirm [type=submit]:hover, .confirm [type=submit]:focus {
+  background-color: var(--color--primary--active);
+  color: var(--color--darkest);
+}
+.confirm [type=button], .confirm [type=button]:active {
+  background-color: var(--color--secondary);
+  color: var(--color--lightest);
+}
+.confirm [type=button]:hover, .confirm [type=button]:focus {
+  background-color: var(--color--secondary--active);
+  color: var(--color--darkest);
+}
+
 /**
  * Utility - Scroll Offset
  */
