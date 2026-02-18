@@ -149,6 +149,20 @@ $drawer-site-brand-width:    6rem !default;
         padding: 0 0 0 20%;
       }
 
+      span {
+        display: block;
+        line-height: 1;
+
+        &:nth-child(1) {
+          margin-inline-start: 0.2em;
+          font-size: 0.44em;
+        }
+
+        &:nth-child(2) {
+          font-size: 1.1em;
+        }
+      }
+
       img {
         width: $drawer-site-brand-width;
       }

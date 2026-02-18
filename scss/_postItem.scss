@@ -24,6 +24,10 @@
     font-size: $h3-font-size;
   }
 
+  &__button {
+    @include button();
+  }
+
   &.is-single {
     @include row();
 
@@ -35,6 +39,10 @@
       &__content {
         @include col(5, true);
         margin-block-end: space();
+
+        @media (min-width: breakpoint("md")) {
+          padding-inline: 3rem;
+        }
       }
     }
   }

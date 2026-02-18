@@ -16,7 +16,7 @@ $slider-nav-active-color:    $link-hover-color !default;
   position: relative;
   width: 100%;
   height: calc(83.33vmin / #{$slider-aspect-ratio});
-  margin-block-start: 3rem; // .sliderNav に合わせて上下に余白を取る
+  //margin-block-start: 3rem; // .sliderNav に合わせて上下に余白を取る
   overflow: hidden;
 
   @media (min-width: $slider-break-point) {

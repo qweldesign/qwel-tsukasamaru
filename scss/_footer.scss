@@ -3,7 +3,28 @@
  */
 
 .footer {
-  padding: space("x-large");
-  @include background($theme-accent);
-  text-align: center;
+  padding: 6rem 0 4.5rem;
+  @include background("darkest");
+
+  &__container {
+    width: 16.5rem;
+    margin: 0 auto;
+
+    small {
+      display: block;
+    }
+
+  }
+
+  &__socialMenu {
+    @include list-unstyled();
+    @include row(flex-start);
+    gap: space("medium");
+    margin: 0;
+
+    a {
+      display: block;
+      line-height: 1;
+    }
+  }
 }

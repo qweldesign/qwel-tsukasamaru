@@ -36,7 +36,7 @@ export default class Slider {
     // オプションをdata属性から取得
     this.flickable = this.elem.hasAttribute('data-flickable') || false;
     this.aspectRatio = Number(this.elem.dataset.aspectRatio) || 8 / 5;
-    this.gap = Number(this.elem.dataset.gap) || 96;
+    this.gap = Number(this.elem.dataset.gap) ?? 96;
     this.interval = Number(this.elem.dataset.interval) || 3000; // 1000未満を指定すると自動再生しない
     this.duration = Number(this.elem.dataset.duration) || 500;
 

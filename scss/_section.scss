@@ -11,7 +11,7 @@
     }
 
     // Test Responsive Color
-    :where(.section:nth-child(odd) &) {
+    :where(.section:nth-child(even) &) {
       @include background("darker");
     }
   }
@@ -23,15 +23,49 @@
   }
 
   &__container {
-    padding-block-start: calc(#{space()} + #{space("medium")});
-    padding-block-end: space("large");
+    padding-block-start: space();
+    padding-block-end: space();
 
-    &:not(.section__container.is-md) {
+    &:not(.is-md) {
       @include container();
     }
 
     &.is-md {
       @include container("md");
+    }
+  }
+
+  &__textBox {
+    width: min(100%, 45rem);
+    margin: 3rem auto;
+    padding: 0 1.5rem;
+  }
+
+  &__table {
+    @include fluid-table(54rem);
+
+    tbody tr:hover {
+      background-color: rgba(255, 255, 255, 0.15);
+    }
+  }
+
+  #access & {
+    &__inner {
+      padding-block-end: 0;
+    }
+
+    &__heading {
+      margin-block-end: space("large");
+    }
+  }
+
+  #contact & {
+    &__inner {
+      padding-block-start: space("large");
+    }
+
+    &__heading {
+      margin-block-end: space("large");
     }
   }
 }

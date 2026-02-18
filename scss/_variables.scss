@@ -1,2 +1,19 @@
 // Variables
 
+$colors:               (
+  primary:               #cc4c33, // hsl(10, 60%, 50%)
+  secondary:             #3366cc, // hsl(220, 60%, 50%)
+  tertiary:              #2aad1f  // hsl(115, 70%, 40%)
+);
+
+$font-family-sans:     "Zen Maru Gothic", serif;
+$font-weight-sans:     400;
+$h1-font-size:         var(--font-size--xx-large);
+
+$icon-bg:              map-get($colors, "primary");
+$icon-hover-bg:        map-get($colors, "primaryLight");
+
+$drawer-hover-color:   map-get($colors, "lightest");
+
+$slider-aspect-ratio:  4 / 3;
+$slider-height:        calc(min(100vh, 48rem) - 9rem); // 9rem = $headerHeight * 2

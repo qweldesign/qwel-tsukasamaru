@@ -3,213 +3,490 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SAMPLE DEMO | QWEL in Action</title>
+    <title>海辺の農園宿 つかさ丸 | 福井市越前海岸</title>
+    <meta name="description" content="ようこそ、福井市越前海岸へ。海辺の農園宿「つかさ丸」では、この静かな漁村に40年以上住んできた私たち夫婦が、ひとときの「田舎暮らし」の楽しみを提供します。">
+    <meta property="og:url" content="https://tsukasamaru.net/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="海辺の農園宿 つかさ丸 | 福井市越前海岸">
+    <meta property="og:description" content="ようこそ、福井市越前海岸へ。海辺の農園宿「つかさ丸」では、この静かな漁村に40年以上住んできた私たち夫婦が、ひとときの「田舎暮らし」の楽しみを提供します。">
+    <meta property="og:site_name" content="海辺の農園宿 つかさ丸 | 福井市越前海岸">
+    <meta property="og:image" content="https://tsukasamaru.net/assets/tsukasamaru_ogp.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
     <link rel="icon" href="./favicon.ico">
   </head>
   <body>
-    <div data-scroll-sentinel></div>
-    <div id="app">
-      <header id="header" class="header" data-active-header>
+    <header id="header" class="header">
+      <div class="header__inner">
         <div class="header__container">
           <nav id="gNav" class="gNav">
             <h1 class="gNav__siteBrand" data-site-brand>
-              <a href="/demo/">Sample Demo</a>
+              <a href="/">
+                <span>海辺の農園宿</span>
+                <span>つかさ丸</span>
+              </a>
             </h1>
             <ul class="gNav__primaryMenu visible-md" data-primary-menu>
-              <li class="gNav__menuItem" data-spy-nav v-for="section in sections">
-                <a :href="`#${section.id}`" v-html="section.name"></a>
-              </li>
-            </ul>
-            <ul class="gNav__socialMenu visible-md" data-social-menu>
-              <template v-for="(item, key) in social">
-                <li class="gNav__menuItem is-social" v-if="item">
-                  <a :href="`https://${key}.com/qweldesign`">
-                    <svg :class="`icon is-si-${key} is-md`" width="36" height="36" aria-hidden="true">
-                      <use :href="`./assets/icons.svg#si-${key}`"></use>
-                    </svg>
-                  </a>
-                </li>
-              </template>
+              <li class="gNav__menuItem"><a href="#greeting">ご挨拶</a></li>
+              <li class="gNav__menuItem"><a href="#service">田舎体験</a></li>
+              <li class="gNav__menuItem"><a href="#plan">宿泊プラン</a></li>
+              <li class="gNav__menuItem"><a href="#food">お料理</a></li>
+              <li class="gNav__menuItem"><a href="#access">アクセス</a></li>
+              <li class="gNav__menuItem"><a href="#contact">お問い合わせ</a></li>
+              <li class="gNav__menuItem is-social"><a href="https://www.instagram.com/tsukasamaru00/" target="_blank">
+                <svg class="icon is-instagram is-md" width="36" height="36" aria-hidden="true">
+                  <use href="./assets/icons.svg#si-instagram"></use>
+                </svg>
+              </span></a></li>
             </ul>
           </nav>
         </div>
+      </div>
+    </header>
+    <main id="main" class="main">
+      <header id="hero" class="hero">
+        <div class="slider" data-gallery="slider" data-aspect-ratio="1.33" data-gap="0" data-interval="5000" data-duration="1000">
+          <figure class="slider__inner" data-gallery-main>
+            <figure class="slider__item" data-gallery-item>
+              <img class="slider__image" src="./assets/feature_main.jpg">
+              <figcaption class="slider__caption">漁船クルーズ体験</figcaption>
+            </figure>
+            <figure class="slider__item" data-gallery-item>
+              <img class="slider__image" src="./assets/feature_00.jpg">
+              <figcaption class="slider__caption">女子中学生の漁船クルーズ体験(春)</figcaption>
+            </figure>
+            <figure class="slider__item" data-gallery-item>
+              <img class="slider__image" src="./assets/feature_01.jpg">
+              <figcaption class="slider__caption">キヌサヤ収穫体験(春・夏)</figcaption>
+            </figure>
+            <figure class="slider__item" data-gallery-item>
+              <img class="slider__image" src="./assets/feature_02.jpg">
+              <figcaption class="slider__caption">東京からのご家族連れの海岸散策(夏)</figcaption>
+            </figure>
+            <figure class="slider__item" data-gallery-item>
+              <img class="slider__image" src="./assets/feature_03.jpg">
+              <figcaption class="slider__caption">中学生の里芋&ごぼう掘り体験(秋)</figcaption>
+            </figure>
+            <figure class="slider__item" data-gallery-item>
+              <img class="slider__image" src="./assets/feature_04.jpg">
+              <figcaption class="slider__caption">落花生収穫体験(秋)</figcaption>
+            </figure>
+            <figure class="slider__item" data-gallery-item>
+              <img class="slider__image" src="./assets/feature_05.jpg">
+              <figcaption class="slider__caption">ドイツからのお客様の豆腐作り体験(秋)</figcaption>
+            </figure>
+            <figure class="slider__item" data-gallery-item>
+              <img class="slider__image" src="./assets/feature_06.jpg">
+              <figcaption class="slider__caption">若いお客様の餅つき体験(冬)</figcaption>
+            </figure>
+            <figure class="slider__item" data-gallery-item>
+              <img class="slider__image" src="./assets/feature_07.jpg">
+              <figcaption class="slider__caption">モンゴルのお客様のお抹茶体験(冬)</figcaption>
+            </figure>
+          </figure>
+        </div>
       </header>
-      <main id="main" class="main">
-        <header id="hero" class="hero">
-          <div class="hero__content">
-            <p>Welcome to our website.
-              <br>This page is a Sample Demo, 
-              <br>so some links and buttons may not work.</p>
-            <a class="button is-primary is-md" href="https://qwel.design/">QWEL.DESIGN</a>
-          </div>
-        </header>
-        <section :id="sections['feature'].id" class="section" data-spy-section>
-          <div class="section__inner">
-            <h2 class="section__heading pb-large" data-readable>{{ sections['feature'].name }}</h2>
-            <div class="slider" data-gallery="slider" data-flickable data-gap="72" data-readable>
-              <figure class="slider__inner" data-gallery-main>
-                <figure class="slider__item" data-gallery-item v-for="item in sections['feature'].items">
-                  <img class="slider__image" :src="item.src">
-                  <figcaption class="slider__caption"><a href="#">{{ item.heading }}</a></figcaption>
-                </figure>
+      <section id="greeting" class="section">
+        <div class="section__inner">
+          <h2 class="section__heading">ご挨拶</h2>
+          <div class="section__container">
+            <article class="postItem is-single">
+              <figure class="postItem__image">
+                <img src="./assets/greeting.jpg">
               </figure>
-            </div>
+              <div class="postItem__content">
+                <h3 class="postItem__heading" style="text-decoration: underline;">ようこそ、福井市越前海岸へ</h3>
+                <p>私たち夫婦は、当宿の周辺にある小さな畑3カ所で多品種少量栽培を行なうとともに、小型漁船「つかさ丸」を使用して若布漁、サザエ漁、魚釣り等も行ない、裏山でシイタケの原木栽培も行なっています。</p>
+                <p>ほぼ自給自足の生活を目指した食生活を送っていて、来訪したお客様にも、これらの食材を使った田舎料理や郷土料理を楽しんでいただいています。</p>
+                <p>また季節によって限定されますが、漁船クルーズ、季節野菜の収穫、原木シイタケ収穫、海岸散策、里山散策、豆腐作り等の体験ができます。</p>
+                <p>海辺の農園宿「つかさ丸」では、この村に40年以上住んできた私たち夫婦が、ひとときの「田舎暮らし」の楽しみを提供します。</p>
+              </div>
+            </article>
           </div>
-        </section>
-        <section :id="sections['about'].id" class="section" data-spy-section>
-          <div class="section__inner">
-            <h2 class="section__heading" data-readable>{{ sections['about'].name }}</h2>
-            <div class="section__container" data-readable>
-              <article class="postItem is-single">
-                <figure class="postItem__image">
-                  <img :src="sections['about'].src">
-                </figure>
-                <div class="postItem__content">
-                  <h3 class="postItem__heading">{{ sections['about'].heading }}</h3>
-                  <p class="postItem__excerpt">{{ sections['about'].excerpt }}</p>
-                  <div class="postItem__more">
-                    <a class="button is-secondary is-sm" href="#">{{ sections['about'].more }}</a>
+        </div>
+      </section>
+      <section id="service" class="section">
+        <div class="section__inner">
+          <h2 class="section__heading">田舎体験</h2>
+          <div class="section__container">
+            <div class="postList is-grid">
+              <div class="postList__item">
+                <section class="postItem">
+                  <figure class="postItem__image">
+                    <img src="./assets/service_00.jpg">
+                  </figure>
+                  <div class="postItem__content">
+                    <h3 class="postItem__heading">漁船クルーズ体験</h3>
+                    <p>当宿所有の小型漁船「つかさ丸」にて周辺の近海をクルーズし、海から眺めた村や山の眺望を楽しみます。</p>
                   </div>
-                </div>
-              </article>
-            </div>
-          </div>
-        </section>
-        <section :id="sections['service'].id" class="section" data-spy-section>
-          <div class="section__inner">
-            <h2 class="section__heading" data-readable>{{ sections['service'].name }}</h2>
-            <div class="section__container" data-readable>
-              <div class="postList is-grid" data-gallery="modal">
-                <div class="postList__item" data-gallery-main v-for="item, i in sections['service'].items">
-                  <section class="postItem">
-                    <figure class="postItem__image">
-                      <a :href="`#service0${i}`" :data-gallery-src="item.src">
-                        <img :src="item.src">
-                      </a>
-                    </figure>
-                    <div class="postItem__content">
-                      <div class="postItem__info">
-                        <div class="postItem__date">{{ item.data }}</div>
-                        <div class="postItem__terms">
-                          <a href="#" v-for="tag in item.tags">{{ tag }}</a>
-                        </div>
-                      </div>
-                      <h3 class="postItem__heading">{{ item.heading }}</h3>
-                      <p class="postItem__excerpt">{{ item.excerpt }}</p>
-                      <div class="postItem__more">
-                        <a href="#">{{ sections['service'].more }} &gt;</a>
-                      </div>
-                    </div>
-                  </section>
-                </div>
+                </section>
+              </div>
+              <div class="postList__item">
+                <section class="postItem">
+                  <figure class="postItem__image">
+                    <img src="./assets/service_01.jpg">
+                  </figure>
+                  <div class="postItem__content">
+                    <h3 class="postItem__heading">いも掘り体験</h3>
+                    <p>当農園の畑にて、いもやごぼうを堀り、新鮮なまま宿にて調理して賞味します。</p>
+                  </div>
+                </section>
+              </div>
+              <div class="postList__item">
+                <section class="postItem">
+                  <figure class="postItem__image">
+                    <img src="./assets/service_02.jpg">
+                  </figure>
+                  <div class="postItem__content">
+                    <h3 class="postItem__heading">海岸散策</h3>
+                    <p>近くの海岸を散策し、安山岩の柱状節理で作られた特有の形を見せる岩場（鉾島）を散策します。</p>
+                  </div>
+                </section>
+              </div>
+              <div class="postList__item">
+                <section class="postItem">
+                  <figure class="postItem__image">
+                    <img src="./assets/service_03.jpg">
+                  </figure>
+                  <div class="postItem__content">
+                    <h3 class="postItem__heading">里山散策</h3>
+                    <p>当宿の裏山にある津波避難道を登り、山の上から見た日本海を眺望し、森の中や地元民でも知らない秘密の滝等を観察します。</p>
+                  </div>
+                </section>
+              </div>
+              <div class="postList__item">
+                <section class="postItem">
+                  <figure class="postItem__image">
+                    <img src="./assets/service_04.jpg">
+                  </figure>
+                  <div class="postItem__content">
+                    <h3 class="postItem__heading">薪割り体験</h3>
+                    <p>農園内の薪小屋にて手斧や油圧式薪割機を使って薪を割ります。</p>
+                  </div>
+                </section>
+              </div>
+              <div class="postList__item">
+                <section class="postItem">
+                  <figure class="postItem__image">
+                    <img src="./assets/service_05.jpg">
+                  </figure>
+                  <div class="postItem__content">
+                    <h3 class="postItem__heading">豆腐作り体験</h3>
+                    <p>地元産の大豆を使って、自家製豆腐を作り、新鮮なうちに味わいます。自家産コンニャクイモを使ったコンニャク作りもできます。</p>
+                  </div>
+                </section>
               </div>
             </div>
           </div>
-        </section>
-        <section :id="sections['news'].id" class="section" data-spy-section>
-          <div class="section__inner">
-            <h2 class="section__heading" data-readable>{{ sections['news'].name }}</h2>
-            <div class="section__container" data-readable>
-              <ul class="postList is-list">
-                <li class="postList__item" v-for="item in sections['news'].items">
-                  <div class="postItem">
-                    <figure class="postItem__image">
-                      <img :src="item.src">
-                    </figure>
-                    <div class="postItem__content">
-                      <div class="postItem__info">
-                        <div class="postItem__date">{{ item.date }}</div>
-                        <div class="postItem__terms">
-                          <a href="#" v-for="tag in item.tags">{{ tag }}</a>
-                        </div>
-                      </div>
-                      <h3 class="postItem__heading">{{ item.heading }}</h3>
-                      <p class="postItem__excerpt">{{ item.excerpt }}</p>
-                      <div class="postItem__more">
-                        <a href="#">{{ sections['news'].more }} &gt;</a>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </section>
-        <section :id="sections['team'].id" class="section" data-spy-section>
-          <div class="section__inner">
-            <h2 class="section__heading" data-readable>{{ sections['team'].name }}</h2>
-            <div class="section__container" data-readable>
-              <article class="postItem is-single">
-                <figure class="postItem__image">
-                  <img :src="sections['team'].src">
-                </figure>
-                <div class="postItem__content">
-                  <h3 class="postItem__heading">{{ sections['team'].heading }}</h3>
-                  <p class="postItem__excerpt">{{ sections['team'].excerpt }}</p>
-                  <div class="postItem__more">
-                    <a class="button is-tertiary is-sm" href="#">{{ sections['team'].more }}</a>
-                  </div>
-                </div>
-              </article>
-            </div>
-          </div>
-        </section>
-        <section :id="sections['access'].id" class="section" data-spy-section>
-          <div class="section__inner pb-none">
-            <h2 class="section__heading pb-large" data-readable>{{ sections['access'].name }}</h2>
-            <div class="embed" data-safe-embed data-readable>
-              <iframe :src="sections['access'].src"></iframe>
-            </div>
-          </div>
-        </section>
-        <section :id="sections['contact'].id" class="section" data-spy-section>
-          <div class="section__inner">
-            <h2 class="section__heading" data-readable>{{ sections['contact'].name }}</h2>
-            <div class="section__container is-md" data-readable>
-              <p class="text-center">{{ sections['contact'].description }}</p>
-              <form class="form">
-                <table>
-                  <tr>
-                    <th><label for="yourname">氏名<span class="is-required">*必須</span></label></th>
-                    <td><input id="yourname" size="30" type="text" name="氏名" required></td>
-                  </tr>
-                  <tr>
-                    <th><label for="youremail">メールアドレス<span class="is-required">*必須</span></label></th>
-                    <td><input id="youremail" size="30" type="email" name="Email" required></td>
-                  </tr>
-                  <tr>
-                    <th><label for="yoursubject">題名</label></th>
-                    <td>
-                      <select id="yoursubject" name="題名">
-                        <option value="ご質問・お問い合わせ">ご質問・お問い合わせ</option>
-                        <option value="その他">その他</option>
-                      </select>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th><label for="yourcontent">メッセージ本文</label></th>
-                    <td><textarea id="yourcontent" name="メッセージ本文" cols="30" rows="6"></textarea></td>
-                  </tr>
-                </table>
-                <input class="button is-primary is-lg" type="submit" value="確認">
-              </form>
-            </div>
-          </div>
-        </section>
-      </main>
-      <div class="fader" data-gallery="fader">
-        <div class="fader__inner" data-gallery-main>
-          <div class="fader__item is-image-1" data-gallery-item></div>
-          <div class="fader__item is-image-2" data-gallery-item></div>
-          <div class="fader__item is-image-3" data-gallery-item></div>
-          <div class="fader__item is-image-4" data-gallery-item></div>
         </div>
-      </div>
-      <footer id="footer" class="footer">
+      </section>
+      <section id="plan" class="section">
+        <div class="section__inner">
+          <h2 class="section__heading">宿泊プラン</h2>
+          <div class="section__textBox">
+            <p>当宿は、農山漁村の持つ豊かな「自然」や「食」を活用し、都市と農山漁村の交流を推進するための農村漁村体験型宿泊施設である農家民宿（農家での民泊）です。一般の宿泊施設とは違うことをご理解の上、ご利用願います。</p>
+            
+            <p>当宿の全てのプランにつき、近隣の天然温泉（「越前水仙の里波の華温泉」または「国民宿舎鷹巣荘」）での「<span style="text-decoration: underline;">無料入浴券</span>」付きです。いずれも車で10分程度で、当宿にて送迎致します。</p>
+            <p><small>※下記料金表は、スマートフォンをお使いの方は、横にフリックして表全体を御覧いただけます。</small></p>
+          </div>
+          <div class="section__container is-md">
+            <h3>宿泊料金</h3>
+            <div class="section__table">
+              <table>
+                <thead>
+                  <tr>
+                    <th>プラン名</th>
+                    <th>時期</th>
+                    <th>内容</th>
+                    <th>ご料金</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>プランA1</td>
+                    <td>月曜日～木曜日</td>
+                    <td>1泊2食 (朝・夕)</td>
+                    <td>6,600円 / 人</td>
+                  </tr>
+                  <tr>
+                    <td>プランA2</td>
+                    <td>月曜日～木曜日</td>
+                    <td>1泊3食 (朝・昼・夕)</td>
+                    <td>7,400円 / 人</td>
+                  </tr>
+                  <tr>
+                    <td>プランB1</td>
+                    <td>金曜日～日曜日</td>
+                    <td>1泊2食 (朝・夕)</td>
+                    <td>7,500円 / 人</td>
+                  </tr>
+                  <tr>
+                    <td>プランB2</td>
+                    <td>金曜日～日曜日</td>
+                    <td>1泊3食 (朝・昼・夕)</td>
+                    <td>8,500円 / 人</td>
+                  </tr>
+                  <tr>
+                    <td>プランC1</td>
+                    <td>繁忙期 <small>※下記注釈参照</small></td>
+                    <td>1泊2食 (朝・夕)</td>
+                    <td>7,900円 / 人</td>
+                  </tr>
+                  <tr>
+                    <td>プランC2</td>
+                    <td>繁忙期 <small>※下記注釈参照</small></td>
+                    <td>1泊3食 (朝・昼・夕)</td>
+                    <td>8,800円 / 人</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <ul>
+              <li>繁忙期は、年末年始 (12/20-1/10)、GW (4/25-5/10)、夏休期間 (7/20-8/31)を示します。</li>
+              <li>宿泊はすべてご予約のお客様にさせていただきます。（<span style="text-decoration: underline;">ご予約は10日前までに</span>）</li>
+              <li>宿泊部屋は2人部屋が2室のみですので、4名までのお客様しか受入れできません。</li>
+              <li>1日1組限定での予約とさせていただきます。</li>
+              <li>インターン等、連泊をご検討の方はご相談ください。割引等可能な場合もあります。</li>
+              <li>宿泊につきましては、ご予約は下記<a href="#contact">【お問い合わせフォーム】</a>からの受付に限定させていただきます。</li>
+              <li>上記の内容につきまして、何卒ご理解とご協力をお願いいたします。</li>
+            </ul>
+          </div>
+          <div class="section__container is-md">
+            <h3>体験料金</h3>
+            <div class="section__table">
+              <table>
+                <thead>
+                  <tr>
+                    <th>体験内容</th>
+                    <th>所要時間</th>
+                    <th>ご料金</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>海岸散策、鉾島散策、里山散策（いずれもガイド付き）</td>
+                    <td>1時間程度</td>
+                    <td>500円 / 人</td>
+                  </tr>
+                  <tr>
+                    <td>季節野菜の収穫体験、薪割り体験</td>
+                    <td>1時間程度</td>
+                    <td>1,000円 / 人</td>
+                  </tr>
+                  <tr>
+                    <td>豆腐作り体験、コンニャク作り体験</td>
+                    <td>2時間程度</td>
+                    <td>1,500円 / 人</td>
+                  </tr>
+                  <tr>
+                    <td>漁船クルーズ体験</td>
+                    <td>2時間程度</td>
+                    <td>2,500円 / 人</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <ul>
+              <li>漁船クルーズについては、当日の波浪の状況により実施できないこともあります。</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section id="food" class="section">
+        <div class="section__inner">
+          <h2 class="section__heading">お料理</h2>
+          <div class="section__textBox">
+            <p>自家産の新鮮野菜を使った田舎料理や地場産食材の郷土料理をお楽しみください。
+              <br>田舎料理: 地元産の山菜・野菜・魚介類を素材とし、季節ごとの特色を感じさせる素朴な料理です。
+              <br>郷土料理: 私たち夫婦が生まれ育った鮎川町に、昔から継承されている地元特有の料理です。</p>
+          </div>
+          <div class="section__container">
+            <div class="postList is-grid">
+              <div class="postList__item">
+                <section class="postItem">
+                  <figure class="postItem__image">
+                    <img src="./assets/food_00.jpg">
+                  </figure>
+                  <div class="postItem__content">
+                    <h3 class="postItem__heading">フキノトウの天ぷら(春)</h3>
+                  </div>
+                </section>
+              </div>
+              <div class="postList__item">
+                <section class="postItem">
+                  <figure class="postItem__image">
+                    <img src="./assets/food_01.jpg">
+                  </figure>
+                  <div class="postItem__content">
+                    <h3 class="postItem__heading">若布のしゃぶしゃぶ(春)</h3>
+                  </div>
+                </section>
+              </div>
+              <div class="postList__item">
+                <section class="postItem">
+                  <figure class="postItem__image">
+                    <img src="./assets/food_02.jpg">
+                  </figure>
+                  <div class="postItem__content">
+                    <h3 class="postItem__heading">サザエの壺焼き(夏)</h3>
+                  </div>
+                </section>
+              </div>
+              <div class="postList__item">
+                <section class="postItem">
+                  <figure class="postItem__image">
+                    <img src="./assets/food_03.jpg">
+                  </figure>
+                  <div class="postItem__content">
+                    <h3 class="postItem__heading">ミョウガのピクルス(夏)</h3>
+                  </div>
+                </section>
+              </div>
+              <div class="postList__item">
+                <section class="postItem">
+                  <figure class="postItem__image">
+                    <img src="./assets/food_04.jpg">
+                  </figure>
+                  <div class="postItem__content">
+                    <h3 class="postItem__heading">夏野菜の揚げ浸たし(夏・秋)</h3>
+                  </div>
+                </section>
+              </div>
+              <div class="postList__item">
+                <section class="postItem">
+                  <figure class="postItem__image">
+                    <img src="./assets/food_05.jpg">
+                  </figure>
+                  <div class="postItem__content">
+                    <h3 class="postItem__heading">じゃがいものガレット(夏・秋)</h3>
+                  </div>
+                </section>
+              </div>
+              <div class="postList__item">
+                <section class="postItem">
+                  <figure class="postItem__image">
+                    <img src="./assets/food_06.jpg">
+                  </figure>
+                  <div class="postItem__content">
+                    <h3 class="postItem__heading">夏野菜のピザ(夏・秋)</h3>
+                  </div>
+                </section>
+              </div>
+              <div class="postList__item">
+                <section class="postItem">
+                  <figure class="postItem__image">
+                    <img src="./assets/food_07.jpg">
+                  </figure>
+                  <div class="postItem__content">
+                    <h3 class="postItem__heading">落花生の塩ゆで(秋・冬)</h3>
+                  </div>
+                </section>
+              </div>
+              <div class="postList__item">
+                <section class="postItem">
+                  <figure class="postItem__image">
+                    <img src="./assets/food_08.jpg">
+                  </figure>
+                  <div class="postItem__content">
+                    <h3 class="postItem__heading">岩海苔のおろし和え(冬・春)</h3>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="access" class="section">
+        <div class="section__inner">
+          <h2 class="section__heading">アクセス</h2>
+          <div class="section__textBox">
+            <p>北陸新幹線が福井県の敦賀駅まで延伸開業しました。当宿の最寄り駅であるJR福井駅まで東京駅から3時間未満でお越しいただけます。</p>
+            <p>JR福井駅から当民宿へは、京福バス（路線バス）の越前海岸ブルーラインの越前波の華温泉行にご乗車いただき、バス停「鮎川新町」下車徒歩5分です。バスの所要時間は約55分で、バス料金は730円です。</p>
+          </div>
+          <div class="embed mt-4" data-safe-embed>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12895.600574897562!2d136.02627672081263!3d36.09592213771344!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5ff8c7f83be0146d%3A0x810ee8f088a34d4!2z5rW36L6644Gu6L6y5ZyS5a6_IOOBpOOBi-OBleS4uA!5e0!3m2!1sja!2sjp!4v1741050541503!5m2!1sja!2sjp"></iframe>
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="section">
+        <div class="section__inner">
+          <h2 class="section__heading">お問い合わせ</h2>
+          <div class="section__textBox">
+            <p>当宿では本業として若布漁を行なっていますので、毎年4月下旬から5月末までの期間、宿泊のお客様を受け入れできないことが多いので、ご了承ください。日程の詳細は、下記カレンダーを参考にお問い合わせください。</p>
+            <p>また、若布製品（乾燥もみ若布の瓶詰）の販売については、期間限定で<a href="https://www.instagram.com/tsukasamaru00/" target="_blank">【インスタグラム】</a>や<a href="https://www.facebook.com/profile.php?id=100056053810234" target="_blank">【フェイススブック】</a>にて情報提供していますので、ご購入の検討をお願いします。詳細はお問い合わせください。</p>
+          </div>
+          <div id="calendar" class="calendar">
+            <div class="calendar__control">
+              <a class="calendar__prev" href="#">&lt; <span class="calendar__prevText"></span></a>
+              <span class="calendar__currentText"></span>
+              <a class="calendar__next" href="#"><span class="calendar__nextText"></span> &gt;</a>
+            </div>
+            <div class="calendar__wrap">
+              <table class="calendar__view">
+                <thead class="calendar__head"></thead>
+                <tbody class="calendar__body"></tbody>
+              </table>
+            </div>
+            <ul class="calendar__status">
+              <li class="calendar__state is-state-0">予約不可</li>
+              <li class="calendar__state is-state-2">予約可能</li>
+              <li class="calendar__state is-state-1">繁忙期(お問い合わせ下さい)</li>
+            </ul>
+          </div>
+          <div class="section__container is-md">
+            <form class="form">
+              <table class="form__table">
+                <tr>
+                  <td><label for="your-name">お名前<span class="required">*必須</span></label></td>
+                  <td><input id="your-name" size="30" type="text" name="お名前" required></td>
+                </tr>
+                <tr>
+                  <td><label for="your-email">メールアドレス<span class="required">*必須</span></label></td>
+                  <td><input id="your-email" size="30" type="email" name="Email" required></td>
+                </tr>
+                <tr>
+                  <td><label for="your-subject">件名</label></td>
+                  <td>
+                    <select id="your-subject" name="件名">
+                      <option value="宿泊のご予約 (観光)">宿泊のご予約 (観光目的)</option>
+                      <option value="宿泊のご予約 (長期)">宿泊のご予約 (長期滞在)</option>
+                      <option value="若布製品について">若布製品について</option>
+                      <option value="ご質問・お問い合わせ">ご質問・お問い合わせ</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <td><label for="your-message">メッセージ本文</label></td>
+                  <td><textarea id="your-message" name="メッセージ本文" cols="30" rows="6"></textarea></td>
+                </tr>
+              </table>
+              <input class="button" type="submit" value="確認">
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer id="footer" class="footer">
+      <div class="footer__container">
         <small class="footer__copyright"></small>
-      </footer>
-    </div>
+        <small>〒910-3402 福井市鮎川町20-2-26</small>
+        <small>TEL: 0776-88-2962</small>
+        <ul class="footer__socialMenu">
+          <li class="footer__socialMenuItem"><a href="https://www.instagram.com/tsukasamaru00/" target="_blank">
+            <svg class="icon is-instagram is-md" width="36" height="36" aria-hidden="true">
+              <use href="./assets/icons.svg#si-instagram"></use>
+            </svg>
+          </a></li>
+          <li class="footer__socialMenuItem"><a href="https://www.facebook.com/profile.php?id=100056053810234" target="_blank">
+            <svg class="icon is-facebook is-md" width="36" height="36" aria-hidden="true">
+              <use href="./assets/icons.svg#si-facebook"></use>
+            </svg>
+          </a></li>
+        </ul>
+      </div>
+    </footer>
     <script src="./init.js" type="module"></script>
   </body>
 </html>
