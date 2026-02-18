@@ -251,7 +251,10 @@ button, input, select, textarea {
 .gNav__menuItem {
   margin: 0;
 }
-.gNav__menuItem--social {
+.gNav__menuItem.is-current {
+  font-weight: 700;
+}
+.gNav__menuItem.is-social {
   width: 3rem;
   text-align: center;
 }

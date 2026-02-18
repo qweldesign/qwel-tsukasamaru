@@ -18,7 +18,7 @@
     <link rel="icon" href="./favicon.ico">
   </head>
   <body>
-    <header id="header" class="header">
+    <header id="header" class="header" data-active-header>
       <div class="header__inner">
         <div class="header__container">
           <nav id="gNav" class="gNav">
@@ -29,12 +29,12 @@
               </a>
             </h1>
             <ul class="gNav__primaryMenu visible-md" data-primary-menu>
-              <li class="gNav__menuItem"><a href="#greeting">ご挨拶</a></li>
-              <li class="gNav__menuItem"><a href="#service">田舎体験</a></li>
-              <li class="gNav__menuItem"><a href="#plan">宿泊プラン</a></li>
-              <li class="gNav__menuItem"><a href="#food">お料理</a></li>
-              <li class="gNav__menuItem"><a href="#access">アクセス</a></li>
-              <li class="gNav__menuItem"><a href="#contact">お問い合わせ</a></li>
+              <li class="gNav__menuItem" data-spy-nav><a href="#greeting">ご挨拶</a></li>
+              <li class="gNav__menuItem" data-spy-nav><a href="#service">田舎体験</a></li>
+              <li class="gNav__menuItem" data-spy-nav><a href="#plan">宿泊プラン</a></li>
+              <li class="gNav__menuItem" data-spy-nav><a href="#food">お料理</a></li>
+              <li class="gNav__menuItem" data-spy-nav><a href="#access">アクセス</a></li>
+              <li class="gNav__menuItem" data-spy-nav><a href="#contact">お問い合わせ</a></li>
               <li class="gNav__menuItem is-social"><a href="https://www.instagram.com/tsukasamaru00/" target="_blank">
                 <svg class="icon is-instagram is-md" width="36" height="36" aria-hidden="true">
                   <use href="./assets/icons.svg#si-instagram"></use>
@@ -88,7 +88,7 @@
           </figure>
         </div>
       </header>
-      <section id="greeting" class="section">
+      <section id="greeting" class="section" data-spy-section>
         <div class="section__inner">
           <h2 class="section__heading">ご挨拶</h2>
           <div class="section__container">
@@ -107,7 +107,7 @@
           </div>
         </div>
       </section>
-      <section id="service" class="section">
+      <section id="service" class="section" data-spy-section>
         <div class="section__inner">
           <h2 class="section__heading">田舎体験</h2>
           <div class="section__container">
@@ -182,7 +182,7 @@
           </div>
         </div>
       </section>
-      <section id="plan" class="section">
+      <section id="plan" class="section" data-spy-section>
         <div class="section__inner">
           <h2 class="section__heading">宿泊プラン</h2>
           <div class="section__textBox">
@@ -294,7 +294,7 @@
           </div>
         </div>
       </section>
-      <section id="food" class="section">
+      <section id="food" class="section" data-spy-section>
         <div class="section__inner">
           <h2 class="section__heading">お料理</h2>
           <div class="section__textBox">
@@ -398,7 +398,7 @@
           </div>
         </div>
       </section>
-      <section id="access" class="section">
+      <section id="access" class="section" data-spy-section>
         <div class="section__inner">
           <h2 class="section__heading">アクセス</h2>
           <div class="section__textBox">
@@ -410,7 +410,7 @@
           </div>
         </div>
       </section>
-      <section id="contact" class="section">
+      <section id="contact" class="section" data-spy-section>
         <div class="section__inner">
           <h2 class="section__heading">お問い合わせ</h2>
           <div class="section__textBox">

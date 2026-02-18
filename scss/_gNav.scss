@@ -42,7 +42,11 @@
   &__menuItem {
     margin: 0;
 
-    &--social {
+    &.is-current {
+      font-weight: 700;
+    }
+
+    &.is-social {
       width: 3rem;
       text-align: center;
     }
