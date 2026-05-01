@@ -31,7 +31,7 @@ class Calendar {
       // リファラ確認
       $referer = $_SERVER['HTTP_REFERER'];
       $url = parse_url($referer);
-      if (!stristr($url['host'], 'qwel.design')) return;
+      if (!stristr($url['host'], 'tsukasamaru.net')) return;
 
       // ステータスの挿入
       if ($method === 'insert') {
